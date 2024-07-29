@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 converter-box">
+                <h2 class="text-center">Temperature Converter</h2>
+                <form id="converter-form">
+                    <div class="form-group">
+                        <label for="inputTemperature">Temperature</label>
+                        <input type="number" class="form-control" id="inputTemperature" placeholder="Enter temperature">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputUnit">Convert From</label>
+                        <select class="form-control" id="inputUnit">
+                            <option value="Celsius">Celsius</option>
+                            <option value="Fahrenheit">Fahrenheit</option>
+                            <option value="Kelvin">Kelvin</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="outputUnit">Convert To</label>
+                        <select class="form-control" id="outputUnit">
+                            <option value="Celsius">Celsius</option>
+                            <option value="Fahrenheit">Fahrenheit</option>
+                            <option value="Kelvin">Kelvin</option>
+                        </select>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-block" onclick="convertTemperature()">Convert</button>
+                </form>
+                <div class="mt-4">
+                    <h4 class="text-center" id="result"></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
